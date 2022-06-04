@@ -1,0 +1,23 @@
+<%- include("partials/header") -%>
+<div class="compose">
+    <h1>Dear Favourite Person,</h1>
+    <br>
+    <form action="/blogs" method="post">
+        <div >
+            <div class="form-outline">
+                <label class="form-label" for="typeText">Title</label>
+                <input type="text" id="typeText" class="form-control" placeholder="Chapter" autocomplete="off" name="topic" />
+              </div>
+            <div class="form-outline">
+                <label class="form-label" for="textAreaExample">Log</label>
+                <textarea class="form-control" id="textAreaExample" rows="4" name="log" placeholder="Start writing your log here...."></textarea>
+            </div>
+            <div class="bottomCompose">
+                <button type="submit" class="btn btn-dark btn-primary">Compose</button>
+                <button type="reset" class="btn btn-secondary btn-dark">Reset</button>
+            </div>
+        </div>
+        
+    </form>
+</div>
+<%- include("partials/footer") -%>

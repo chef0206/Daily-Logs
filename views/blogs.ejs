@@ -1,0 +1,11 @@
+<%- include("partials/header") -%>
+
+<% logs.forEach(function(log){ %>
+    <div class="posts">
+        <h2><%= log.title %></h2>
+        <p><%= log.mylogs.substring(0,80) + "..." %> <a href="/blogs/<%= log.title %>">Read more</a></p>
+    </div>
+<%})%>
+<a href="/compose" class="btn btn-dark">Compose</a>
+
+<%- include("partials/footer") -%>

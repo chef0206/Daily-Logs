@@ -1,0 +1,16 @@
+<%- include("partials/header") -%>
+
+    <div class="">
+        <h2>
+            <%= logs.title %>
+        </h2>
+        <p>
+            <%= logs.mylogs %>
+        </p>
+    </div>
+    <form action="/deletePost" method="post">
+        <button type="submit" class="btn btn-secondary btn-dark" name="currentLog" value="<%= logs.title %>">Delete Log</button>
+        <button type="submit" class="btn btn-dark btn-primary" name="updateLog" value="<%= logs.title %>" formaction="/postUpdate">Update</button>
+    </form>
+
+<%- include("partials/footer") -%>
